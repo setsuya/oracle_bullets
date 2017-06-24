@@ -136,7 +136,7 @@ body {
 .bullet_info {
 	box-sizing: border-box;
 	position: relative;
-	width: 50%;
+	width: 668px;
 	height: 80px;
 	margin: 10px 0 10px 0;
 	border-radius: 5px;
@@ -147,7 +147,7 @@ body {
 .bullet_info_new {
 	box-sizing: border-box;
 	position: relative;
-	width: 50%;
+	width: 668px;
 	height: 80px;
 	margin: 10px 0 10px 85px;
 	border-radius: 5px;
@@ -162,7 +162,7 @@ body {
 .bullet_info_empty {
 	box-sizing: border-box;
 	position: relative;
-	width: 50%;
+	width: 668px;
 	height: 80px;
 	margin: 10px 0 10px 85px;
 	background-color: transparent;
