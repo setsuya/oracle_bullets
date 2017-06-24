@@ -15,7 +15,7 @@ $(document).ready(function(){
 	if(location.href.indexOf("?") != -1){
 		position = location.href.indexOf("?");
 		recreateBullet(LZString.decompressFromEncodedURIComponent(location.href.substr(position + 1)));
-		$("[property=\"og:url\"]").attr("content", "http://picrossweb.url.ph/oracle_bullet/?" + location.href.substr(position + 1));
+		$("[property=\"og:url\"]").attr("content", "https://setsuya.github.io/oracle_bullets/?" + location.href.substr(position + 1));
 	}
 });
 
@@ -96,9 +96,9 @@ function makeBullet(){
 	full_recipe_string = LZString.compressToEncodedURIComponent(full_recipe_string);
 
 	share_link = $("[property=\"og:url\"]").attr("content");
-	$("[property=\"og:url\"]").attr("content", "http://picrossweb.url.ph/oracle_bullet/?" + full_recipe_string);
+	$("[property=\"og:url\"]").attr("content", "https://setsuya.github.io/oracle_bullets/?" + full_recipe_string);
 
-	$("<div id=\"overlay\"><div id=\"message\"><div id=\"bullet_link\">http://picrossweb.url.ph/oracle_bullet/?" + full_recipe_string + "</div><div id=\"close_overlay\" onclick=\"closeOverlay()\">Close</div></div></div>").appendTo("body").fadeIn("medium");
+	$("<div id=\"overlay\"><div id=\"message\"><div id=\"bullet_link\">https://setsuya.github.io/oracle_bullets/?" + full_recipe_string + "</div><div id=\"close_overlay\" onclick=\"closeOverlay()\">Close</div></div></div>").appendTo("body").fadeIn("medium");
 }
 
 function closeOverlay(){
